@@ -1,0 +1,16 @@
+@import '../../styles/variables';
+
+.navbar {
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $lapisLazuli;
+  }
+  &-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $argentinianBlue;
+  }
+}
