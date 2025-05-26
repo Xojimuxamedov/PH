@@ -3,8 +3,8 @@ import "./navbar.scss";
 function Navbar() {
   return (
     <div className="navbar">
-      <div className="container">
-        <div className="navbar-top">
+      <div className="navbar-top">
+        <div className="navbar-top-inner">
           <h2 className="navbar-top-title">
             "FARM LOYIHA" mas`uliyati cheklangan jamiyati
           </h2>
@@ -24,8 +24,14 @@ function Navbar() {
             </a>
           </div>
         </div>
-        <div className="navbar-bottom">
-          <img src="../public/LOGO-loyiha.png" alt="Logo Farm Loyiha" className="navbar-logo"/>
+      </div>
+      <div className="navbar-bottom">
+        <div className="navbar-bottom-inner">
+          <img
+            src="../../images/LOGO-loyiha.png"
+            alt="Farm Loyiha logo"
+            className="navbar-logo"
+          />
           <div className="navbar-links">
             <div className="navbar-link">Bosh sahifa</div>
             <div className="navbar-link">Biz haqimizda</div>

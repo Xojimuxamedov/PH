@@ -1,17 +1,5 @@
 $lapisLazuli: #1e8ab1;
 $argentinianBlue: #22ade0;
+$fontWhite: #fff;
+$fontBlack: #000;
 
-@mixin container($max-width: 1200px, $padding-x: 15px) {
-  width: 100%;
-  max-width: $max-width;
-  margin: 0 auto;
-  padding-left: $padding-x;
-  padding-right: $padding-x;
-  box-sizing: border-box;
-}
-
-@mixin white-text($size, $weight) {
-  font-size: $size;
-  font-weight: $weight;
-  color: #fff;
-}
