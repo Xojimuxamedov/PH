@@ -1,0 +1,22 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.navbar {
+  &-top {
+    background: $lapisLazuli;
+    &-title {
+      @include text(1rem, 700)
+    }
+    &-inner {
+      @include flex1;
+      @include container;
+    }
+  }
+  &-bottom {
+    background: $argentinianBlue;
+    &-inner {
+      @include flex1;
+      @include container;
+    }
+  }
+}
