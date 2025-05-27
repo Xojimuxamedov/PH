@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import "./navbar.scss";
 
 function Navbar() {
@@ -8,18 +9,18 @@ function Navbar() {
           <h2 className="navbar-top-title">
             "FARM LOYIHA" mas`uliyati cheklangan jamiyati
           </h2>
-          <div className="navbar-contact">
+          <div className="navbar-top-contact">
             <a
-              class="headerup-first-mailText"
+              class="navbar-top-mail"
               href="mailto:pharm.engineering@mail.ru?subject=Salom&body=Assalomu alaykum, sizga xabar yozyapman."
               target="_blank"
             >
               Gmail
             </a>
-            <a class="headerup-first-mailText" href="tel:+998996511111">
+            <a class="navbar-top-mail" href="tel:+998996511111">
               +998996511111
             </a>
-            <a class="headerup-first-mailText" href="tel:+998998045040">
+            <a class="navbar-top-mail" href="tel:+998998045040">
               +998998045040
             </a>
           </div>
@@ -27,17 +28,29 @@ function Navbar() {
       </div>
       <div className="navbar-bottom">
         <div className="navbar-bottom-inner">
-          <img
-            src="../../images/LOGO-loyiha.png"
-            alt="Farm Loyiha logo"
-            className="navbar-logo"
-          />
-          <div className="navbar-links">
-            <div className="navbar-link">Bosh sahifa</div>
-            <div className="navbar-link">Biz haqimizda</div>
-            <div className="navbar-link">Xizmatlar</div>
-            <div className="navbar-link">Bog'lanish</div>
-            <div className="navbar-link">Yangiliklar</div>
+          <Link to={"/"}>
+            <img
+              src="/images/logo-mini.png"
+              alt="Farm Loyiha"
+              className="navbar-bottom-logo"
+            />
+          </Link>
+          <div className="navbar-bottom-links">
+            <Link to={"/about"} className="navbar-bottom-link">
+              Bosh sahifa
+            </Link>
+            <Link to={"/about"} className="navbar-bottom-link">
+              Biz haqimizda
+            </Link>
+            <Link to={"/about"} className="navbar-bottom-link">
+              Xizmatlar
+            </Link>
+            <Link to={"/about"} className="navbar-bottom-link">
+              Bog'lanish
+            </Link>
+            <Link to={"/about"} className="navbar-bottom-link">
+              Yangiliklar
+            </Link>
           </div>
         </div>
       </div>
