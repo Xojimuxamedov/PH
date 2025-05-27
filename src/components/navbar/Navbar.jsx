@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import "./navbar.scss";
+import { Outlet } from "react-router";
 
 function Navbar() {
   return (
@@ -54,6 +55,7 @@ function Navbar() {
           </div>
         </div>
       </div>
+      <Outlet />
     </div>
   );
 }
