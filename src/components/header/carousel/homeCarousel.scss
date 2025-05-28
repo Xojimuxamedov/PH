@@ -1,0 +1,69 @@
+@use "/src/styles/variables" as *;
+@use "/src/styles/mixins" as *;
+
+#carousel-item-1 {
+  background: #f0f0f0;
+}
+#carousel-item-2 {
+  background: red;
+}
+#carousel-item-3 {
+  background: blueviolet;
+}
+#carousel-item-4 {
+  background: greenyellow;
+}
+#carousel-item-5 {
+  background: darkorange;
+}
+
+.carousel {
+  @include flex2;
+  // overflow: hidden;
+  position: relative;
+  &-items {
+    @include flex1(0);
+    width: 100%;
+    height: 70vh;
+    // transform: translateX(-400%);
+    transition: .6s;
+    -webkit-transition: 0.6s;
+    position: relative;
+  }
+  &-item {
+    @include padding(20px, 80px);
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    left: 100%; // default: tashqarida bo‘ladi
+    transition: left 0.5s ease, opacity 0.5s ease;
+    
+    &.active {
+      left: 0; // active bo‘lganda o‘z joyiga keladi
+      z-index: 2;
+    }
+    
+  }
+  &-button {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    @include padding(0, 20px);
+    &-prev {
+      background: linear-gradient(to left, #ffffff00, rgb(145, 145, 145, 0.5));
+      left: 0;
+      z-index: 2;
+    }
+    &-next {
+      background: linear-gradient(
+        to right,
+        #ffffff00,
+        rgba(145, 145, 145, 0.5)
+      );
+      right: 0;
+      z-index: 2;
+    }
+  }
+}
