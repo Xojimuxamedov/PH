@@ -1,6 +1,6 @@
 // @use './variables' as *;
 
-@mixin container($max-width: 1200px, $padding-x: 15px) {
+@mixin container($max-width: 1750px, $padding-x: 15px) {
   width: 100%;
   max-width: $max-width;
   margin: 0 auto;
@@ -9,14 +9,24 @@
   box-sizing: border-box;
 }
 
-@mixin text($size: 1rem, $weight: 500, $color: #fff) {
+@mixin text($size: 1rem, $weight: 400, $color: #fff) {
   font-size: $size;
   font-weight: $weight;
   color: $color;
 }
 
-@mixin flex1 {
+@mixin flex1($gap: 18px) {
+  display: flex;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin flex2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@mixin padding($padding-y: 4px, $padding-x: 10px) {
+  padding: $padding-y $padding-x; 
 }
