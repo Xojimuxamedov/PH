@@ -1,0 +1,29 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.header-contact {
+  background-color: $argentinianBlue;
+  border-top: $lapisLazuli 2px solid;
+  border-bottom: $lapisLazuli 2px solid;
+  &-inner {
+    @include container;
+    @include flex2;
+    @include padding(30px, 80px);
+  }
+  &-text {
+    @include text(1.4rem, 600, $fontBlack);
+    color: $fontWhite;
+  }
+  &-link {
+    @include text(1rem, 600, $fontBlack);
+    @include padding(8px, 20px);
+    text-decoration: none;
+    background: $bgWhite;
+    color: $argentinianBlue;
+    border-radius: 25px;
+    border: $lapisLazuli 2px solid;
+    &:hover {
+      background: $bgWhiteHover;
+    }
+  }
+}

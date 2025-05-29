@@ -34,16 +34,10 @@
     @include padding(0, 20px);
     z-index: 10;
     &-prev {
-      background: linear-gradient(to left, #ffffff00, rgb(145, 145, 145, 0.5));
       left: 0;
       z-index: 10;
     }
     &-next {
-      background: linear-gradient(
-        to right,
-        #ffffff00,
-        rgba(145, 145, 145, 0.5)
-      );
       right: 0;
       z-index: 10;
     }
@@ -52,7 +46,11 @@
     @include padding(20px, 80px);
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to top, $argentinianBlue,rgba(34, 173, 224, 0.0));
+    background: linear-gradient(
+      to top,
+      $argentinianBlue,
+      rgba(34, 173, 224, 0)
+    );
   }
   &-title {
     @include text(2.5rem, 700, $fontBlack);
@@ -67,7 +65,7 @@
   &-link {
     @include text(1rem, 500, $argentinianBlue);
     @include padding(8px, 20px);
-    background: $white;
+    background: $bgWhite;
     border-radius: 20px;
     width: min-content;
     text-decoration: none;
