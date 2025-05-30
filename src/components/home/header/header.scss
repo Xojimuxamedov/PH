@@ -3,8 +3,6 @@
 
 .header-contact {
   background-color: $argentinianBlue;
-  border-top: $lapisLazuli 2px solid;
-  border-bottom: $lapisLazuli 2px solid;
   &-inner {
     @include container;
     @include flex2;
@@ -21,7 +19,6 @@
     background: $bgWhite;
     color: $argentinianBlue;
     border-radius: 25px;
-    border: $lapisLazuli 2px solid;
     &:hover {
       background: $bgWhiteHover;
     }
