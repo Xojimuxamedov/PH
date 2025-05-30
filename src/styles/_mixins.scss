@@ -27,6 +27,12 @@
   align-items: center;
 }
 
+@mixin flex3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin padding($padding-y: 4px, $padding-x: 10px) {
   padding: $padding-y $padding-x; 
 }
