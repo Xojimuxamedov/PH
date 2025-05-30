@@ -46,11 +46,9 @@
     @include padding(20px, 80px);
     display: flex;
     flex-direction: column;
-    background: linear-gradient(
-      to top,
-      $argentinianBlue,
-      rgba(34, 173, 224, 0)
-    );
+    background: linear-gradient(to top, rgba(255,255,255,0.7), rgba(255,255,255,0));
+    backdrop-filter: blur(2px);
+    pointer-events: none;
   }
   &-title {
     @include text(2.5rem, 700, $fontBlack);
