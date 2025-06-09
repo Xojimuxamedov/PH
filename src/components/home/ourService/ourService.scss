@@ -1,5 +1,5 @@
 @import "../../../styles/mixins";
-@import "../../../styles/variables";
+@import "../../..//styles/variables";
 
 .service {
   &-inner {
@@ -15,19 +15,19 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 15px;
-    text-align: center;
     margin-top: 30px;
   }
   &-link {
-    @include text(1.2rem, 500, $fontWhite);
-    @include padding(4px, 10px);
-    @include flex3;
-    background: #000;
+    @include text(1.3rem, 500, $fontWhite);
+    @include padding(20px, 30px);
+    display: flex;
+    align-items: end;
+    align-items: end;
     border-radius: 15px;
-    height: 150px;
-    transition: .1s;
+    height: 30vh;
+    transition: 0.1s;
     &:hover {
-      transform:translateY(-5px);
+      transform: translateY(-5px);
     }
   }
 }
